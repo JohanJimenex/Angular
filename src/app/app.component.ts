@@ -16,7 +16,7 @@ export class AppComponent {
     this.numero += valor;
   }
 
-  nombre = "s"
+  nombre = "dell"
 
 
 
