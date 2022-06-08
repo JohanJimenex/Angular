@@ -13,11 +13,10 @@ export class AppComponent {
   public base: number = 5
 
   modificarContador(valor: number): void {
-    this.numero += valor;
+      this.numero += valor;
   }
 
   nombre = "dell"
-
 
 
 }
