@@ -1,5 +1,7 @@
 <h1>{{titulo}}</h1>
 
-<button (click)="modificarContador(-1);">Disminuir - </button>
+<h3>La base es: <strong>{{base}}</strong></h3>
+
+<button (click)="modificarContador(-base);">Disminuir - {{base}}</button>
 <span style="font-size: 50px;">{{numero}}</span>
-<button (mouseenter)="modificarContador(1);">Aumentar + </button>
+<button (click)="modificarContador(base);">Aumentar + {{base}}</button>
