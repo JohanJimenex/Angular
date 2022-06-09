@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContadorComponent } from './contador.component';
 
 @Component({
   selector: 'app-root', //nombre del componente , se usa en el html principal
@@ -11,7 +10,7 @@ import { ContadorComponent } from './contador.component';
 
 export class AppComponent {
 
-  
+
 
 
 }
