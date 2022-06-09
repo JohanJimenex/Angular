@@ -10,11 +10,11 @@ export class ListadoComponent {
   arrHeroes: string[] = ["Spiderman", "Ironman", "Hulk", "Thor", "Superman", "Batman"]
 
 
-  heroeEliminado: string | undefined = "";
+  heroeEliminado: string = "";
 
   eliminarHerore(): void {
-    this.heroeEliminado = this.arrHeroes.shift();
+    this.heroeEliminado = this.arrHeroes.shift() || "";
   }
 
-  
+
 }

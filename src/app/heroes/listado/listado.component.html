@@ -1,13 +1,17 @@
 <p>listado de Heroes!</p>
 
-
 <ul>
-    <li *ngFor="let heroe of arrHeroes let i = index">
-        {{i+1}} {{heroe}}
-    </li>
+  <li *ngFor="let heroe of arrHeroes; let i = index">
+    {{ i + 1 }} {{ heroe }}
+  </li>
 </ul>
 
-<h3>Heroe eliminado: {{heroeEliminado}}</h3>
+<div *ngIf="heroeEliminado != ''; else noHaBorrado">
+  <h3>Heroe eliminado: {{ heroeEliminado }}</h3>
+</div>
 
+<ng-template #noHaBorrado>
+  <h3>No ha eliminado</h3>
+</ng-template>
 
 <button (click)="eliminarHerore()">Eliminar Heroe</button>
