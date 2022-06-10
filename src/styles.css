@@ -40,3 +40,22 @@ button:focus {
 .p-1 {
     padding: 1px;
 }
+
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.col h3{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 5px;
+}
