@@ -16,7 +16,6 @@ import { DbzModule } from './dbz/dbz.module';
     ContadorModule,
     HeroesModule,
     DbzModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
