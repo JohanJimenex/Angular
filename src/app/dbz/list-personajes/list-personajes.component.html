@@ -1,0 +1,14 @@
+<h3>Personajes</h3>
+<hr />
+
+<ul>
+
+  <li *ngFor="let personaje of DOSarrPersojesDBZ">
+    {{ personaje.nombre }} - Nivel de pelea:
+    {{ personaje.nivelDePelea | number }}
+    <!-- | los pipes sirven para hacer modificaciones visualmentes como 'number' -->
+  </li>
+
+  {{miVariableX}}
+
+</ul>

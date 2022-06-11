@@ -3,18 +3,14 @@
 
 <div class="row">
   <div class="col">
-    <h3>Personajes</h3>
-    <hr />
+    <!-- el atributo [DOSarrPersojesDBZ] es en realidad una variable que viene desde su componente
+      app-list-personajes que tiene el decorador @Input() para que pueda aparecer aquí y nosotros poder mandarle un valor.
+    Le asignamos un valor del arreglo arrPersonajesDBZ que existe en el script main-pagecomponente  -->
 
-    <ul>
-      <li *ngFor="let personaje of arrPersonajesDBZ">
-        {{ personaje.nombre }} - Nivel de pelea:
-        {{ personaje.nivelDePelea | number }}
-        <!-- | los pipes sirven para hacer modificaciones visualmentes como 'number' -->
-      </li>
-    </ul>
+    <!-- <app-list-personajes [miVariableX]=" 'esto es string' "></app-list-personajes> -->
+    <app-list-personajes [data]="arrPersonajesDBZ">
+    </app-list-personajes>
   </div>
-
   <div class="col">
     <h3>Agregar Personaje</h3>
     <hr />
