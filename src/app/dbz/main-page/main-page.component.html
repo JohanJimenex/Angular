@@ -8,7 +8,9 @@
 
     <ul>
       <li *ngFor="let personaje of arrPersonajesDBZ">
-        {{ personaje.nombre }} - Nivel de pelea: {{ personaje.nivelDePelea }}
+        {{ personaje.nombre }} - Nivel de pelea:
+        {{ personaje.nivelDePelea | number }}
+        <!-- | los pipes sirven para hacer modificaciones visualmentes como 'number' -->
       </li>
     </ul>
   </div>
@@ -29,22 +31,21 @@
         type="text"
         placeholder="Nombre del personaje"
         name="nombre"
-        [(ngModel)]="PersonajeDBZ.nombre"
-        required=""
+        [(ngModel)]="personajeDBZ.nombre"
       />
       <!-- Estos atributos no son necesario con el parametro $event -->
       <!-- [value]="PersonajeDBZ.nombre" -->
       <!-- (input)="agregarPersonaje($event)" -->
 
-      <!-- Con los corchetes en el atributo "[value]" asignamos valor desde el componente -->
+      <!-- Con los corchetes en un atributo ejem : "[value]" nos permite ejecutar codigo dentro de las comillas,
+        que tiene acceso a los script0 componentes -->
       <!-- El evento (input) se dispara cuando ingresan valor en el campo  -->
       <input
         type="number"
         placeholder="Nivel de Pelea"
         name="nivelPelea"
-        [(ngModel)]="PersonajeDBZ.nivelDePelea"
+        [(ngModel)]="personajeDBZ.nivelDePelea"
       />
-
       <!-- "ngModel" esto reemplaza al atributo "value" pero con poderes, ver mas abajo  -->
       <!-- [ngModel] Con los corchetes podemos asignarle un valor desde el componente -->
       <!-- [(ngModel)]con los parentesis ejecutamos el evento ngModel que combinado con

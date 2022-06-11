@@ -15,25 +15,25 @@ export class MainPageComponent {
 
   arrPersonajesDBZ: IPersonajeDBZ[] = []
 
-  PersonajeDBZ: IPersonajeDBZ = {
+  personajeDBZ: IPersonajeDBZ = {
     nombre: "",
     nivelDePelea: 0
   }
-
-
 
   agregarPersonaje(): void {
     //el parametro event ya no es necesario
     // agregarPersonaje(event: any): void {
     // let valorInput = event.target.value;
-    // this.PersonajeDBZ.nombre = valorInput
+    // this.personajeDBZ.nombre = valorInput
 
-    if (this.PersonajeDBZ.nombre.trim()) {
-      
+    if (this.personajeDBZ.nombre.trim().length === 0) { return; }
+
+    this.arrPersonajesDBZ.push(this.personajeDBZ);
+
+    this.personajeDBZ = {
+      nombre: "",
+      nivelDePelea: 0
     }
-
-
-    this.arrPersonajesDBZ.push(this.PersonajeDBZ);
 
   }
 
