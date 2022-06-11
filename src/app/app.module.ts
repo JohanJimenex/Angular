@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ContadorModule } from './contador/contador.module';
 import { HeroesModule } from './heroes/heroes.modulo';
 import { DbzModule } from './dbz/dbz.module';
+import { AgregarComponent } from './agregar/agregar/agregar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AgregarComponent
   ],
   imports: [
     BrowserModule,
