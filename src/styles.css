@@ -6,8 +6,6 @@
 
 html,
 body {
-
-    background: rgb(137, 137, 137);
     margin: 20px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
@@ -51,11 +49,11 @@ button:focus {
     margin-right: 10px;
 }
 
-.col h3{
+.col h3 {
     text-align: center;
 }
 
-input{
+input {
     display: block;
     margin: 5px;
 }
