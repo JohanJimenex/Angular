@@ -10,7 +10,7 @@ export class MainPageComponent {
   arrPersonajesDBZ: IPersonajeDBZ[] = []
 
   agregarPersonaje(arg: IPersonajeDBZ): void {
-
+     
     this.arrPersonajesDBZ.push(arg);
   }
 

@@ -15,8 +15,10 @@ ver ejemplo debajo-->
   <!-- [value]="PersonajeDBZ.nombre" -->
   <!-- (input)="agregarPersonaje($event)" -->
 
-  <input type="text" placeholder="Nombre del personaje" name="nombre" [(ngModel)]="personajeDBZ.nombre" />
-  <input type="number" placeholder="Nivel de Pelea" name="nivelPelea" [(ngModel)]="personajeDBZ.nivelDePelea" />
+  <!-- <input type="text" placeholder="Nombre del personaje" name="nombre" [(ngModel)]="personajeDBZ.nombre" /> -->
+  <!-- <input type="number" placeholder="Nivel de Pelea" name="nivelPelea" [(ngModel)]="personajeDBZ.nivelDePelea" /> -->
+  <input type="text" placeholder="Nombre del personaje" name="nombre" [value]="personajeDBZ.nombre" />
+  <input type="number" placeholder="Nivel de Pelea" name="nivelPelea" [value]="personajeDBZ.nivelDePelea" />
   <button type="submit">Agregar</button>
 
   <!-- Con los corchetes en un atributo ejem : "[value]" nos permite ejecutar codigo dentro de las comillas,
