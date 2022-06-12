@@ -8,15 +8,17 @@
     Le asignamos un valor del arreglo arrPersonajesDBZ que existe en el script main-pagecomponente  -->
 
     <!-- <app-list-personajes [miVariableX]=" 'esto es string' "></app-list-personajes> -->
-    <app-list-personajes [DOSarrPersojesDBZ]="arrPersonajesDBZ"> </app-list-personajes>
+    <app-list-personajes> </app-list-personajes>
+
   </div>
 
   <div class="col">
 
     <!-- Video 64: el Input() en este caso funciono alrevez , asigno el valor de TRESarrP al arrPersonaDBZ, pero se explicara  -->
     <!-- <app-agregar [TRESarrPersonajesDBZ]="arrPersonajesDBZ"></app-agregar> -->
+    <!-- <app-agregar (onNuevoPersonaje)="agregarPersonaje($event)"></app-agregar> -->
 
-    <app-agregar (onNuevoPersonaje)="agregarPersonaje($event)"></app-agregar>
+    <app-agregar></app-agregar>
 
   </div>
 </div>
