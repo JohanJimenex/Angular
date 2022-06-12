@@ -1,35 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IPersonajeDBZ } from '../interfaces/dbz.interface';
 
 @Component({
   selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
 
   arrPersonajesDBZ: IPersonajeDBZ[] = []
 
-  personajeDBZ: IPersonajeDBZ = {
-    nombre: "",
-    nivelDePelea: 0
-  }
+  agregarPersonaje(arg: IPersonajeDBZ): void {
 
-  agregarPersonaje(): void {
-    //el parametro event ya no es necesario
-    // agregarPersonaje(event: any): void {
-    // let valorInput = event.target.value;
-    // this.personajeDBZ.nombre = valorInput
-
-    if (this.personajeDBZ.nombre.trim().length === 0) { return; }
-
-    this.arrPersonajesDBZ.push(this.personajeDBZ);
-
-    this.personajeDBZ = {
-      nombre: "",
-      nivelDePelea: 0
-    }
-
+    this.arrPersonajesDBZ.push(arg);
   }
 
 
