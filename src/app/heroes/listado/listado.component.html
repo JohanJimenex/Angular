@@ -6,10 +6,14 @@
   </li>
 </ul>
 
+<!-- Truco/atajao para ocultar codigo por referencia -->
+<!-- referencias #  se mostrara este pedazo de codigo si la condicion es True-->
+
 <div *ngIf="heroeEliminado != ''; else noHaBorrado">
   <h3>Heroe eliminado: {{ heroeEliminado }}</h3>
 </div>
 
+<!-- referencias #  se mostrara este pedazo de codigo si la condicion arriba es falsa-->
 <ng-template #noHaBorrado>
   <h3>No ha eliminado</h3>
 </ng-template>

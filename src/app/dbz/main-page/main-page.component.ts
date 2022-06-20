@@ -9,10 +9,13 @@ import { DbzService } from '../services/dbz.service';
 export class MainPageComponent {
 
 
-  //Inyeccion de dependencia
-  //Con esto se crea una variable en la clase dbzService, que contiene arrPersonajesDBZ
 
+  //Inyeccion de dependencia para tener una isntancia de DbzServices
+  // constructor(private dbzService: DbzService) { }
+  
   // arrPersonajesDBZ: IPersonajeDBZ[] = this.dbzService.arrPersonajesDBZ;
+
+  
   // agregarPersonaje(arg: IPersonajeDBZ): void {
 
   //   this.arrPersonajesDBZ.push(arg);

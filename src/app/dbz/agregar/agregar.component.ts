@@ -9,9 +9,11 @@ import { DbzService } from '../services/dbz.service';
 })
 export class AgregarComponent {
 
+
+  //cn este decorador podemos mandar datos a esta variable desde el html con el atributo [TRESarrPersonajesDBZ]="klk"
   // @Input() TRESarrPersonajesDBZ: IPersonajeDBZ[] = []
 
-  @Input() personajeDBZ: IPersonajeDBZ = {
+  personajeDBZ: IPersonajeDBZ = {
     nombre: '',
     nivelDePelea: 0
   }
