@@ -20,7 +20,7 @@ export class AgregarComponent {
 
   //El decorador @Output() nos permite crear nuestros propios eventos ej: (onNuevoPersonaje)  
   // @Output() onNuevoPersonaje: EventEmitter<IPersonajeDBZ> = new EventEmitter<IPersonajeDBZ>();
-  //combinado con .emit(dadoAenviar) ejecutamos la funcion que envia datos como parametro
+  //combinado con .emit(datoAenviar) ejecutamos la funcion que envia datos como parametro
 
   //Inyeccion de dependencia
   constructor(private dbzService: DbzService) { }
